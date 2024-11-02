@@ -4,10 +4,21 @@ public class Kethan
 {
     static void Main()
     {
-        // Conversions conversions = new Conversions();
-        // conversions.ConvertStringInt();
-        FullTimeEmployee empIdName = new FullTimeEmployee(7, "name");
-        Console.WriteLine(empIdName.Name);
+        Conversions conversions = new Conversions();
+        conversions.();
+        // FullTimeEmployee empIdName = new FullTimeEmployee(7, "name");
+        // Console.WriteLine(empIdName.Name);
+        MethodOverloading methodOverloading = new MethodOverloading();
+        methodOverloading.AddNumbers(3, 4);
+        methodOverloading.AddNumbers(3.0,4.0);
+        methodOverloading.AddNumbers("hi");
+        MethodOverriding methodOverriding = new MethodOverriding();
+        methodOverriding.GetAddress("3");
+        IStudentService a = new StudentService();
+        IStudentService b = new StudentServiceFromDB();
+
+
+        
 
     }
 }
